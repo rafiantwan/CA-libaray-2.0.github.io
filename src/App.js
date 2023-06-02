@@ -7,14 +7,14 @@ import Books from "./pages/Books";
 import { books } from "./data";
 import Bookinfo from "./pages/Bookinfo";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div className="App">
         <Nav />
-        <Route path="/" exact component={Home} />
-        <Route path="/books" render={() => <Books books={books} />} />
-        <Route path="/books/1" render={() => <Bookinfo books={books} />} />
+        <Route exact path="/" component={Home}  />
+        <Route exact path="/books" render={() => <Books books={books} />} />
+        <Route path="/books/:id" render={() => <Bookinfo books={books} />} />
         <Footer />
       </div>
     </Router>

@@ -18,7 +18,7 @@ const Footer = () => {
                         <Link to="/books" className='footer__link'>Books</Link>
                         <Link to="/cart" className='footer__link'>Cart</Link>
                     </div>
-                    <div className="footer__copyright">Copyright &copy; 2021 Library</div>
+                    <div className="footer__copyright">Copyright &copy; 2023 Library</div>
                 </div>
             </div>
         </footer>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LibraryLogo from '../assets/Library.svg';
 
-const Nav = ({numberOfItems}) => {
+const Nav = ({ numberOfItems }) => {
   function openMenu() {
     document.body.classList += " menu--open"
   }

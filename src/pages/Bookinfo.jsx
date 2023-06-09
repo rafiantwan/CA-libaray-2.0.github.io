@@ -14,7 +14,7 @@ const Bookinfo = ({ books, addToCart, cart }) => {
   }
 
   function bookExistsOnCart() {
-    return cart.find((book) => book.id === +id);
+    return cart && cart.find((book) => book.id === +id);
   }
 
   return (

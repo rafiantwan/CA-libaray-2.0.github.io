@@ -3,7 +3,7 @@ import Book from "../components/ui/Book";
 
 const Books = ({ books: initalBooks }) => {
   const [books, setBooks] = useState(initalBooks);
-
+  console.log(":hi")
   function filterBooks(filter) {
     console.log(filter);
     if (filter === "LOW_TO_HIGH") {
